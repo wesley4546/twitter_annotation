@@ -10,8 +10,14 @@ If you stop in the middle, it does have a mechanism that will roughly save your 
 
 It's relativley simple to setup but it is important to have specific things:
 
-  * Your `input.csv` must have the following 2 columns:
+  * Your `input.csv` must contain the following 2 columns:
     * `ScreenName` which is the twitter username (The @ one)
     * `URL` the URL to the user
-  
+    
+
+For Example:
+
+![Example of Column naming in Input CSV](tutorial/example_input_csv_column_names.PNG)
+
+
 
