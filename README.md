@@ -29,5 +29,6 @@ Make sure that in you `main.py` that you have the correct file names for both:
  * ` output_file_name`
  
 For Example:
+
 ![Example of variable naming for the files](tutorial/example_file_variable_naming.PNG)
 
