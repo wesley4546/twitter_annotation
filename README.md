@@ -8,7 +8,7 @@ If you stop in the middle, it does have a mechanism that will roughly save your 
 
 ## Tutorial
 
-It's relativley simple to setup but it is important to have specific things:
+It's relativley simple to setup but it is important to do these steps:
 
 ### Step 1
 
@@ -31,4 +31,21 @@ Make sure that in you `main.py` that you have the correct file names for both:
 For Example:
 
 ![Example of variable naming for the files](tutorial/example_file_variable_naming.PNG)
+
+
+## Adding a question*
+
+
+
+If you would like to add a question or change the questionnaire do make sure you do this:
+
+ 1. In `questionnaire.py` make sure to add a new `qX` variable to the `Responses` class
+ 1. Add the desired question in the `question` dictionary
+ 1. Add where in the `questionnaire()` function you would like to place the question (the `## INPUT ##` Section)
+ 1. Add the question to the `out` variable (the `## OUTPUT##` Section)
+ 1. Add the column name to the `create_output_csv` function
+
+*Make sure to have all the questions you want before you start your annotation process. Once you start you annotating process there is no way to add a question and have the program re-iterate through your URLs. In that case you would have to start over. 
+
+
 
