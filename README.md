@@ -8,7 +8,7 @@ If you stop in the middle, it does have a mechanism that will roughly save your 
 
 ## Tutorial
 
-It's relativley simple to setup but it is important to do these steps:
+It's relatively simple to setup but it is important to do these steps:
 
 ### Step 1
 
