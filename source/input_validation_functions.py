@@ -6,7 +6,7 @@ These functions validate responses.
 def validate_binary_response(prompt):
     while True:
         value = input(prompt)
-        # Checks for valid input
+        # I made it check for the string version so I don't have to worry about True and False
         if not value == "0":
             if not value == "1":
                 error_bar_print("The response must be 1 or 0.")
@@ -15,6 +15,7 @@ def validate_binary_response(prompt):
                 break
         else:
             break
+    # Output is a str
     return value
 
 
@@ -27,6 +28,7 @@ def validate_text_response(prompt):
             continue
         else:
             break
+    # Output is a str
     return value
 
 
@@ -42,12 +44,14 @@ def validate_category_response(prompt, number_of_categories):
             error_bar_print("The response must be one of the categories")
         else:
             break
+    # output is a int
     return value
 
 
 def error_bar_print(error):
-    top_bar = "##-------------ERROR-------------##"
-    bottom_bar = "##-------------------------------##"
+    # Aesthetics
+    top_bar = "\n##--------------------------ERROR--------------------------##"
+    bottom_bar = "##---------------------------------------------------------##\n"
 
     print(top_bar)
     print(error)

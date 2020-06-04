@@ -25,11 +25,14 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.questionnaire">
+  <component name="RunManager" selected="Python.input_validation_functions">
     <configuration name="input_validation_functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="twitter_annotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -48,6 +51,9 @@
       <module name="twitter_annotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -66,6 +72,9 @@
       <module name="twitter_annotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -84,6 +93,9 @@
       <module name="twitter_annotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -100,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.questionnaire" />
-        <item itemvalue="Python.questionnaire" />
         <item itemvalue="Python.input_validation_functions" />
-        <item itemvalue="Python.scratch_1" />
-        <item itemvalue="Python.scratch_1" />
+        <item itemvalue="Python.input_validation_functions" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.questionnaire" />
+        <item itemvalue="Python.questionnaire" />
       </list>
     </recent_temporary>
   </component>

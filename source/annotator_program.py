@@ -15,7 +15,7 @@ This function is made to take in the annotation_(name).csv file and a output fil
 
 def annotator_program(input_annotation_file, output_file_name):
     # Messaging
-    separators = "----------------------"
+    separators = "------------------------------------------------"
     print("Twitter Bot Qualitative Coding")
     print(separators)
 
@@ -24,12 +24,15 @@ def annotator_program(input_annotation_file, output_file_name):
         annotationcsv = pd.read_csv(input_annotation_file)
         cleanedcsv = annotationcsv.dropna(how='all', subset=['ScreenName']).to_dict()
         URLS = cleanedcsv['URL']
+        screen_names = cleanedcsv['ScreenName']
     except:
         annotationcsv = input_annotation_file.to_dict()
         URLS = annotationcsv['URL']
+        screen_names = annotationcsv['ScreenName']
 
     # Starts loop to append to CSV
     for url in URLS:
+        
         # Opens the twitter URL
         webbrowser.open(URLS[url])
 
@@ -38,7 +41,7 @@ def annotator_program(input_annotation_file, output_file_name):
 
         # Creates the rows to append
         csv_file_rows = (
-            annotation.q13,
+            screen_names[url],
             annotation.q1,
             annotation.q2,
             annotation.q3,

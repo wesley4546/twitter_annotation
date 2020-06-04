@@ -12,7 +12,7 @@ The purpose of this script is:
 
 class Responses:
 
-    def __init__(self, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13):
+    def __init__(self, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12):
         self.q1 = q1
         self.q2 = q2
         self.q3 = q3
@@ -25,7 +25,6 @@ class Responses:
         self.q10 = q10
         self.q11 = q11
         self.q12 = q12
-        self.q13 = q13
 
 
 questions = {
@@ -54,18 +53,14 @@ questions = {
                    'Hyprid - 3 \n'
                    'Impossible - 4\n'
                    'Answer: ',
-    'question_12': '12. (TEXT) Please describe why you chose 4: ',
-    'question_13': '(TEXT) **VERY IMPORTANT** Enter twitter username (The @ one): '
+    'question_12': '12. (TEXT) Please describe why you chose 4: '
 }
 
 
 def questionnaire():
     ## INPUT ##
 
-    separators = "-----------------------------------"
-
-    twitter_user_name = validate_text_response(questions['question_13'])
-
+    separators = "\n-------------------------------------------------------------\n"
     # Text
     screen_name = validate_text_response(questions['question_1'])
 
@@ -73,7 +68,7 @@ def questionnaire():
     # Binary
     us_relevance = validate_binary_response(questions['question_2'])
 
-    if us_relevance != 0:
+    if us_relevance != "0":
         print(separators)
 
         # Binary
@@ -143,7 +138,7 @@ def questionnaire():
         q10=notes,
         q11=final_code,
         q12=reason_four,
-        q13=twitter_user_name
     )
 
     return out
+
