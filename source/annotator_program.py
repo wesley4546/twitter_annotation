@@ -13,7 +13,6 @@ This function is made to take in the annotation_(name).csv file and a output fil
 """
 
 
-
 def annotator_program(input_annotation_file, output_file_name):
     # Messaging
     separators = "----------------------"
@@ -31,7 +30,6 @@ def annotator_program(input_annotation_file, output_file_name):
 
     # Starts loop to append to CSV
     for url in URLS:
-
         # Opens the twitter URL
         webbrowser.open(URLS[url])
 

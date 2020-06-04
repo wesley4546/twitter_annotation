@@ -1,3 +1,4 @@
+from source.input_validation_functions import *
 
 """
 The purpose of this script is:
@@ -28,29 +29,32 @@ class Responses:
 
 
 questions = {
-    'question_1': '(TEXT) Enter Screen Name (Not the @ one): ',
-    'question_2': '(BINARY) Is the account relevant for US? 1 or 0 ',
-    'question_3': '(BINARY) Does the name include "bot" anywhere? 1 or 0 ',
-    'question_4': '(BINARY) Are there emoticons in the name? 1 or 0 ',
-    'question_5': '(BINARY) Are there emoticons in the profile description? 1 or 0 ',
-    'question_6': '(TEXT) Describe the profile image briefly: ',
-    'question_7': '(BINARY) Is the User Location sensible? Does it make sense? 1 or 0 ',
-    'question_8': '(CATEGORY) What type of activity is found?\n'
+    'question_1': '1. (TEXT) Enter Screen Name (Not the @ one): ',
+    'question_2': '2. (BINARY) Is the account relevant for US? (1 or 0): ',
+    'question_3': '3. (BINARY) Does the Screen name include "bot" anywhere? (1 or 0): ',
+    'question_4': '4. (BINARY) Are there emoticons in the name? (1 or 0): ',
+    'question_5': '5. (BINARY) Are there emoticons in the profile description? (1 or 0): ',
+    'question_6': '6. (TEXT) Describe the profile image briefly: ',
+    'question_7': '7. (BINARY) Is the User Location sensible? Does it make sense? (1 or 0): ',
+    'question_8': '8. (CATEGORY) What type of activity is found?\n'
                   'Tweeting - 1\n'
                   'Retweeting - 2\n'
                   'Replying - 3\n'
                   'Tweeting and Retweeting - 4\n'
                   'All (Tweeting, Retweeting, and Replying) - 5\n'
                   'Answer: ',
-    'question_9': '(BINARY) Are the tweets multi-topical or uni-topical? 1 or 0 ',
-    'question_10': '(TEXT) Write any notes that you have about the account. If none, put none ',
-    'question_11': '(CATEGORY) Please code the following \n'
+    'question_9': '9. (CATEGORY) Are the tweets or retweets:\n'
+                  'uni-topical - 1 \n'
+                  'multi-topical - 2 \n'
+                  'Answer: ',
+    'question_10': '10. (TEXT) Write any notes that you have about the account. If none, put none: ',
+    'question_11': '11. (CATEGORY) Please code the following \n'
                    'Bot - 1 \n'
                    'Human - 2 \n'
                    'Hyprid - 3 \n'
                    'Impossible - 4\n'
                    'Answer: ',
-    'question_12': '(TEXT) Please describe why you chose 4: ',
+    'question_12': '12. (TEXT) Please describe why you chose 4: ',
     'question_13': '(TEXT) **VERY IMPORTANT** Enter twitter username (The @ one): '
 }
 
@@ -58,46 +62,58 @@ questions = {
 def questionnaire():
     ## INPUT ##
 
-    separators = "----------------------"
+    separators = "-----------------------------------"
 
-    twitter_user_name = input(questions['question_13'])
-    screen_name = input(questions['question_1'])
-    print(separators)
+    twitter_user_name = validate_text_response(questions['question_13'])
 
-    us_relevance = int(input(questions['question_2']))
+    # Text
+    screen_name = validate_text_response(questions['question_1'])
+
     print(separators)
+    # Binary
+    us_relevance = validate_binary_response(questions['question_2'])
 
     if us_relevance != 0:
-
-        name_bot = input(questions['question_3'])
         print(separators)
 
-        name_emoji = input(questions['question_4'])
+        # Binary
+        name_bot = validate_binary_response(questions['question_3'])
         print(separators)
 
-        profile_emoji = input(questions['question_5'])
+        # Binary
+        name_emoji = validate_binary_response(questions['question_4'])
         print(separators)
 
-        profile_image = input(questions['question_6'])
+        # Binary
+        profile_emoji = validate_binary_response(questions['question_5'])
         print(separators)
 
-        profile_location = input(questions['question_7'])
+        # Text
+        profile_image = validate_text_response(questions['question_6'])
         print(separators)
 
-        way_of_communication = input(questions['question_8'])
+        # Binary
+        profile_location = validate_binary_response(questions['question_7'])
         print(separators)
 
-        print("Sometimes, accounts post about more than one idea. For example, a tweet about sports, politics, "
+        # Category
+        way_of_communication = validate_category_response(questions['question_8'], number_of_categories=5)
+        print(separators)
+
+        print("Sometimes, accounts post about more than one idea. For example, a tweet/retweet about sports, politics, "
               "entertainment.")
-        content_diversity = input(questions['question_9'])
+        # Category
+        content_diversity = validate_category_response(questions['question_9'], number_of_categories=2)
 
-        notes = input(questions['question_10'])
+        # Text
+        notes = validate_text_response(questions['question_10'])
         print(separators)
 
-        final_code = int(input(questions['question_11']))
+        # Category
+        final_code = validate_category_response(questions['question_11'], number_of_categories=4)
 
         if final_code == 4:
-            reason_four = input(questions['question_12'])
+            reason_four = validate_text_response(questions['question_12'])
         else:
             reason_four = "NA"
     else:
