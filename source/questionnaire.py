@@ -46,7 +46,7 @@ questions = {
     'question_9': '9. (NUMERIC) Enter number of tweets and replies displayed: ',
     'question_10': '10. (NUMERIC) Enter number of media displayed: ',
     'question_11': '11. (NUMERIC) Enter number of posts liked by the account: ',
-    'question_12': '12. (NUMERIC) Enter number of topics the account follows:',
+    'question_12': '12. (NUMERIC) Enter number of topics the account follows: ',
     'question_13': '13. (NUMERIC) Enter number of lists the account belongs to: ',
     'question_14': '14. (CATEGORY) Is this an Individual or Organization account?\n'
                    'Individual - 1\n'
@@ -60,7 +60,7 @@ questions = {
                    'Impossible to decide - 4\n'
                    'Answer: ',
     'question_17': '17. (TEXT) Please enter analysis: ',
-    'question_18': '18. (TEXT) Please enter any notes about this account (If none, put `NA`)'
+    'question_18': '18. (TEXT) Please enter any notes about this account (If none, put `NA`): '
 }
 
 
