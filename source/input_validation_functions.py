@@ -24,7 +24,7 @@ def validate_text_response(prompt):
         # Checks for empty string
         value = input(prompt)
         if value == "":
-            error_bar_print("The screen name cannot be blank.")
+            error_bar_print("The text cannot be blank.")
             continue
         else:
             break
