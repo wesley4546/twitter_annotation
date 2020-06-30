@@ -48,6 +48,18 @@ def validate_category_response(prompt, number_of_categories):
     return value
 
 
+def validate_numeric_response(prompt):
+    while True:
+        # Checks for integer
+        try:
+            value = int(input(prompt))
+        except ValueError:
+            error_bar_print("The response must be a number.")
+        else:
+            break
+    return value
+
+
 def error_bar_print(error):
     # Aesthetics
     top_bar = "\n##--------------------------ERROR--------------------------##"
