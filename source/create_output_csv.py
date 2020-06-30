@@ -10,7 +10,8 @@ The purpose of this function is:
 
 def create_output_csv(file_name):
     # Column names of CSV
-    csv_column_names = ['name_of_user',
+    csv_column_names = ['twitter_username',
+                        'screen_name',
                         'date_joined',
                         'location',
                         'description',
