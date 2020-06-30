@@ -123,6 +123,7 @@ def questionnaire():
     num_lists = validate_numeric_response(questions['question_13'])
     print(separators)
 
+    print("Accounts can exist for an individual or can represent an organization.")
     # Category
     type_of_account = validate_category_response(questions['question_14'], 2)
     print(separators)
