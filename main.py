@@ -13,8 +13,8 @@ This is the main program that stitches it all together.
 """
 
 # This is where you input what your annotations file is called, and what you want the output file to be called
-input_file_name = "annotation_Wesley.csv"  # This one has the list of your twitter usernames and URLs
-output_file_name = "twitter_annotations.csv"  # This is the name of the file the program will create
+input_file_name = "user_annotation.csv"  # This one has the list of your twitter usernames and URLs
+output_file_name = "completed_annotations.csv"  # This is the name of the file the program will create
 
 print_welcome_message()
 
