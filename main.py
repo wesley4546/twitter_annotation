@@ -13,8 +13,8 @@ This is the main program that stitches it all together.
 """
 
 # This is where you input what your annotations file is called, and what you want the output file to be called
-input_file_name = "name_twitter_account_list.csv"  # This one has the list of your twitter usernames and URLs
-output_file_name = "name_completed_annotations.csv"  # This is the name of the file the program will create
+input_file_name = "annotation_Wesley.csv"  # This one has the list of your twitter usernames and URLs
+output_file_name = "twitter_annotations.csv"  # This is the name of the file the program will create
 
 print_welcome_message()
 
@@ -23,5 +23,6 @@ if not path.exists(output_file_name):
     create_output_csv(output_file_name)
     annotator_program(input_file_name, output_file_name)
 else:
+    print("Picking up where you left off...")
     consolidated_csv = check_for_duplicates(input_file_name, output_file_name)
     annotator_program(consolidated_csv, output_file_name)
