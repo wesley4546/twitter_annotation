@@ -6,7 +6,7 @@ The purpose of this program is so that anyone can rapidly go through a list of t
 
 ## Tutorial
 
-It's relatively simple to setup but it is important to do these steps:
+It's relatively simple to setup but important to do these steps:
 
 ### Step 1
 
@@ -24,7 +24,7 @@ For Example:
 Make sure that in you `main.py` that you have the correct file names for both:
  * `input_file_name`
  
- * ` output_file_name`
+ * `output_file_name`
  
 For Example:
 
