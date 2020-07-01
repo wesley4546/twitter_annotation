@@ -16,7 +16,6 @@ This function is made to take in the annotation_(name).csv file and a output fil
 def annotator_program(input_annotation_file, output_file_name):
     # Messaging
     separators = "------------------------------------------------"
-    print("Twitter Bot Qualitative Coding")
     print(separators)
 
     # This checks to make sure that it's either reading the raw CSV or the output from the check_duplicate function
