@@ -24,7 +24,7 @@ def create_output_csv(file_name):
                         'num_likes',
                         'num_topics',
                         'num_lists',
-                        'type_of_account',
+                        'institutional',
                         'spam',
                         'final_code',
                         'analysis',

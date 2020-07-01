@@ -36,7 +36,7 @@ class Responses:
 
 questions = {
     'question_1': '1. (TEXT) Copy and Paste the name of account (Not the @ one): ',
-    'question_2': '2. (TEXT) Enter date join (Format = ‘month, year’): ',
+    'question_2': '2. (TEXT) Enter date join (Format = ‘month year’): ',
     'question_3': '3. (TEXT) Enter user location (If none, put ‘NA’): ',
     'question_4': '4. (BINARY) Does the account have a description? (1 or 0): ',
     'question_5': '5. (BINARY) Does the account have a profile photo? (1 or 0): ',
@@ -48,15 +48,12 @@ questions = {
     'question_11': '11. (NUMERIC) Enter number of posts liked by the account: ',
     'question_12': '12. (NUMERIC) Enter number of topics the account follows: ',
     'question_13': '13. (NUMERIC) Enter number of lists the account belongs to: ',
-    'question_14': '14. (CATEGORY) Is this an Individual or Organization account?\n'
-                   'Individual - 1\n'
-                   'Organization - 2\n'
-                   'Answer: ',
+    'question_14': '14. (BINARY) Is this an Official Institutional account? (1 or 0): ',
     'question_15': '15: (BINARY) Is this a spamming account? (1 or 0): ',
     'question_16': '16. (CATEGORY) Please code the account as following:\n'
                    'Bot - 1\n'
                    'Hybrid - 2\n'
-                   'Non-bot; Genuine - 3\n'
+                   'Human Being - 3\n'
                    'Impossible to decide - 4\n'
                    'Answer: ',
     'question_17': '17. (TEXT) Please enter analysis: ',
@@ -68,8 +65,6 @@ def questionnaire():
     ## INPUT ##
 
     separators = "\n-------------------------------------------------------------\n"
-    # Text
-    # screen_name = validate_text_response(questions['question_1'])
 
     # Text
     name_of_user = validate_text_response(questions['question_1'])
@@ -123,9 +118,8 @@ def questionnaire():
     num_lists = validate_numeric_response(questions['question_13'])
     print(separators)
 
-    print("Accounts can exist for an individual or can represent an organization.")
     # Category
-    type_of_account = validate_category_response(questions['question_14'], 2)
+    institutional = validate_binary_response(questions['question_14'])
     print(separators)
 
     # Binary
@@ -159,7 +153,7 @@ def questionnaire():
         q11=num_likes,
         q12=num_topics,
         q13=num_lists,
-        q14=type_of_account,
+        q14=institutional,
         q15=spam,
         q16=final_code,
         q17=analysis,
