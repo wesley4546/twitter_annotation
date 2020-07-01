@@ -2,9 +2,7 @@
 
 ## Introduction 
 
-The purpose of this program is so that anyone can rapidly go through a list of twitter user URLs and answer questions about them; in other words a very simple data-entry program.
-
-If you stop in the middle, it does have a mechanism that will roughly save your progress (As long as you enter things in correctly).
+The purpose of this program is so that anyone can rapidly go through a list of twitter user URLs and answer questions about them; in other words a very simple data-entry program. Equipped with a saving mechanism to save your progress after finishing an account.
 
 ## Tutorial
 
