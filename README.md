@@ -8,6 +8,8 @@ The purpose of this program is so that anyone can rapidly go through a list of t
 
 It's relatively simple to setup but important to do these steps:
 
+YouTube Tutorial: https://youtu.be/LuSrNGfjy3U
+
 ### Step 1
 
   * Your `input.csv` must contain the following 2 columns:
