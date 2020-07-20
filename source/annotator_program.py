@@ -58,7 +58,9 @@ def annotator_program(input_annotation_file, output_file_name):
             annotation.q15,
             annotation.q16,
             annotation.q17,
-            annotation.q18
+            annotation.q18,
+            annotation.q19,
+            annotation.q20
         )
 
         # Appends the CSV file

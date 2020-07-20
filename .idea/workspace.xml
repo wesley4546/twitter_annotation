@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7937f349-1efd-42b8-ade4-368b57f6ae1a" name="Default Changelist" comment="" />
+    <list default="true" id="7937f349-1efd-42b8-ade4-368b57f6ae1a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/annotator_program.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/annotator_program.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/check_for_duplicates.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/check_for_duplicates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/create_output_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/create_output_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/print_welcome_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/print_welcome_message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/questionnaire.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/questionnaire.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +35,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.print_welcome_message">
+  <component name="RunManager" selected="Python.main">
     <configuration name="input_validation_functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="twitter_annotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,6 +79,9 @@
       <module name="twitter_annotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -130,10 +140,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.print_welcome_message" />
-        <item itemvalue="Python.print_version" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.questionnaire" />
+        <item itemvalue="Python.print_welcome_message" />
         <item itemvalue="Python.input_validation_functions" />
       </list>
     </recent_temporary>
@@ -156,45 +165,54 @@
       <screen x="1920" y="324" width="1920" height="1040" />
     </state>
     <state x="2717" y="524" key="FileChooserDialogImpl/0.0.1920.1040/1920.324.1920.1040@1920.324.1920.1040" timestamp="1591323127238" />
-    <state width="1259" height="175" key="GridCell.Tab.0.bottom" timestamp="1593634424595">
-      <screen x="0" y="23" width="1280" height="709" />
+    <state width="1259" height="310" key="GridCell.Tab.0.bottom" timestamp="1595278065415">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1259" height="310" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1595278065415" />
     <state width="1899" height="433" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591248285179" />
     <state width="1259" height="175" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1593634424595" />
-    <state width="1259" height="175" key="GridCell.Tab.0.center" timestamp="1593634424594">
-      <screen x="0" y="23" width="1280" height="709" />
+    <state width="1259" height="310" key="GridCell.Tab.0.center" timestamp="1595278065414">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1259" height="310" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1595278065414" />
     <state width="1899" height="433" key="GridCell.Tab.0.center/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591248285179" />
     <state width="1259" height="175" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1593634424594" />
-    <state width="1259" height="175" key="GridCell.Tab.0.left" timestamp="1593634424594">
-      <screen x="0" y="23" width="1280" height="709" />
+    <state width="1259" height="310" key="GridCell.Tab.0.left" timestamp="1595278065413">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1259" height="310" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1595278065413" />
     <state width="1899" height="433" key="GridCell.Tab.0.left/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591248285179" />
     <state width="1259" height="175" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1593634424594" />
-    <state width="1259" height="175" key="GridCell.Tab.0.right" timestamp="1593634424595">
-      <screen x="0" y="23" width="1280" height="709" />
+    <state width="1259" height="310" key="GridCell.Tab.0.right" timestamp="1595278065415">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1259" height="310" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1595278065415" />
     <state width="1899" height="433" key="GridCell.Tab.0.right/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591248285179" />
     <state width="1259" height="175" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1593634424595" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1591247054974">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1259" height="310" key="GridCell.Tab.1.bottom" timestamp="1595278065418">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1259" height="310" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1595278065418" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591247054974" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1591247054974">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1259" height="310" key="GridCell.Tab.1.center" timestamp="1595278065417">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1259" height="310" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1595278065417" />
     <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591247054974" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1591247054974">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1259" height="310" key="GridCell.Tab.1.left" timestamp="1595278065416">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1259" height="310" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1595278065416" />
     <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591247054974" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1591247054974">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1259" height="310" key="GridCell.Tab.1.right" timestamp="1595278065418">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1259" height="310" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1595278065418" />
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591247054974" />
-    <state x="363" y="178" width="839" height="486" key="find.popup" timestamp="1593554643368">
-      <screen x="0" y="23" width="1280" height="709" />
+    <state x="363" y="175" width="839" height="549" key="find.popup" timestamp="1595275144572">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="363" y="175" width="839" height="549" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1595275144572" />
     <state x="363" y="178" width="839" height="486" key="find.popup/0.23.1280.709/1280.23.1194.811@0.23.1280.709" timestamp="1593554643368" />
     <state x="415" y="176" width="670" height="463" key="search.everywhere.popup" timestamp="1593550683515">
       <screen x="0" y="23" width="1280" height="709" />

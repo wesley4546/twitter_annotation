@@ -11,6 +11,7 @@ The purpose of this function is:
 def create_output_csv(file_name):
     # Column names of CSV
     csv_column_names = ['twitter_username',
+                        'english',
                         'screen_name',
                         'date_joined',
                         'location',
@@ -28,7 +29,8 @@ def create_output_csv(file_name):
                         'spam',
                         'final_code',
                         'analysis',
-                        'notes']
+                        'notes',
+                        'time']
 
 
     # Writes CSV

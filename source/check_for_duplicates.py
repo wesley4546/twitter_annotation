@@ -12,7 +12,7 @@ The purpose of this function is:
 def check_for_duplicates(annotation_csv, output_csv):
     # Removes NAs
     ant_csv = pd.read_csv(annotation_csv).dropna(how='all', subset=['ScreenName'])
-    out_csv = pd.read_csv(output_csv).dropna(how='all', subset=['screen_name'])
+    out_csv = pd.read_csv(output_csv)
 
     # Gets the usernames that already are done
     out_csv_usernames = out_csv['twitter_username'].to_list()
