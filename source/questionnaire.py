@@ -59,7 +59,11 @@ questions = {
                    'Human Being - 3\n'
                    'Impossible to decide - 4\n'
                    'Answer: ',
-    'question_18': '18. (TEXT) ANALYSIS - What does the account try to achieve topically or socially or politically? ',
+    'question_18': '18. (TEXT) ANALYSIS - Write purpose/intention of the account.\n '
+                   '(You can select from Social, Cultural, Political, Personal, Marketing, '
+                   'and Professional\n '
+                   'or write any new arising themes you '
+                   'can find only if you cannot find the right category.): ',
     'question_19': '19. (TEXT) Please enter any notes about this account (If none, put `NA`): ',
     'question_20': '20. (NUMERIC) Please enter number of minutes it took to complete investigation: '
 }

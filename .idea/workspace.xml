@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7937f349-1efd-42b8-ade4-368b57f6ae1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/annotator_program.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/annotator_program.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/check_for_duplicates.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/check_for_duplicates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/create_output_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/create_output_csv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/print_welcome_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/print_welcome_message.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/questionnaire.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/questionnaire.py" afterDir="false" />
     </list>
@@ -35,14 +32,11 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.questionnaire">
     <configuration name="input_validation_functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="twitter_annotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -61,6 +55,9 @@
       <module name="twitter_annotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -100,9 +97,6 @@
       <module name="twitter_annotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -140,10 +134,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.questionnaire" />
-        <item itemvalue="Python.print_welcome_message" />
         <item itemvalue="Python.input_validation_functions" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.print_welcome_message" />
       </list>
     </recent_temporary>
   </component>
