@@ -14,9 +14,6 @@ This function is made to take in the annotation_(name).csv file and a output fil
 
 
 def annotator_program(input_annotation_file, output_file_name):
-    # Messaging
-    separators = "------------------------------------------------"
-    print(separators)
 
     # This checks to make sure that it's either reading the raw CSV or the output from the check_duplicate function
     try:
@@ -60,10 +57,16 @@ def annotator_program(input_annotation_file, output_file_name):
             annotation.q17,
             annotation.q18,
             annotation.q19,
-            annotation.q20
+            annotation.q20,
+            annotation.q21,
+            annotation.q22,
+            annotation.q23,
+            annotation.q24
         )
 
         # Appends the CSV file
         with open(output_file_name, 'a', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
             writer.writerow(csv_file_rows)
+
+    print("Done!")
