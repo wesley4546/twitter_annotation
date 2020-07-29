@@ -30,10 +30,10 @@ def create_output_csv(file_name):
         'spam',
         'final_code',
         'evidence',
-        'num_analysis',
-        'theme',
         'confidence_score',
         'explain_confidence',
+        'num_analysis',
+        'add_theme',
         'notes',
         'time'
     ]

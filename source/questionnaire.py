@@ -76,8 +76,8 @@ questions = {
                              'Personal - 1, Entertainment - 2, Political- 3, \n'
                              'Professional - 4, Marketing - 5, Information aggregation - 6\n'
                              '(for example, `34` means Political and Professional): ',
-    'question_theme': '(TEXT) THEME – Does this account have any purposes not covered in the previous question? If '
-                      'so, please explain. (If none, put NA): ',
+    'question_theme': '(TEXT) Additional Themes – Does this account have any purposes not covered in the previous '
+                      'question? If so, please explain. (If none, put NA): ',
     'question_confidence': '(NUMERIC) IN PROGRESS',
     'question_expl_conf': '(TEXT) IN PROGRESS'
 
@@ -182,16 +182,6 @@ def questionnaire():
         evidence = validate_text_response(questions['question_evidence'])
         question_number += 1
 
-        # Numeric
-        print_question_number(question_number)
-        num_analysis = validate_numeric_response(questions['question_num_analysis'])
-        question_number += 1
-
-        # Numeric
-        print_question_number(question_number)
-        theme = validate_text_response(questions['question_theme'])
-        question_number += 1
-
         # ?
         print_question_number(question_number)
         confidence = validate_numeric_response(questions['question_confidence'])
@@ -200,6 +190,16 @@ def questionnaire():
         # Text
         print_question_number(question_number)
         expl_confidence = validate_numeric_response(questions['question_expl_conf'])
+        question_number += 1
+
+        # Numeric
+        print_question_number(question_number)
+        num_analysis = validate_numeric_response(questions['question_num_analysis'])
+        question_number += 1
+
+        # Numeric
+        print_question_number(question_number)
+        add_theme = validate_text_response(questions['question_theme'])
         question_number += 1
 
         # Numeric
@@ -232,7 +232,7 @@ def questionnaire():
         final_code = "NA"
         evidence = "NA"
         num_analysis = "NA"
-        theme = "NA"
+        add_theme = "NA"
         confidence = "NA"
         expl_confidence = "NA"
         notes = "NA"
@@ -259,10 +259,10 @@ def questionnaire():
         q16=spam,
         q17=final_code,
         q18=evidence,
-        q19=num_analysis,
-        q20=theme,
-        q21=confidence,
-        q22=expl_confidence,
+        q19=confidence,
+        q20=expl_confidence,
+        q21=num_analysis,
+        q22=add_theme,
         q23=notes,
         q24=time
     )
