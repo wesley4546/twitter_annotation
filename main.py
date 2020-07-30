@@ -1,3 +1,4 @@
+import time
 from os import path
 from source.create_output_csv import create_output_csv
 from source.annotator_program import annotator_program
@@ -21,8 +22,10 @@ print_welcome_message()
 if not path.exists(output_file_name):
     print("Creating output CSV...")
     create_output_csv(output_file_name)
+    time.sleep(1)
     annotator_program(input_file_name, output_file_name)
 else:
     print("Picking up where you left off...")
     consolidated_csv = check_for_duplicates(input_file_name, output_file_name)
+    time.sleep(1)
     annotator_program(consolidated_csv, output_file_name)
