@@ -42,10 +42,10 @@ class Responses:
 
 questions = {
     'question_qualify': '(CATEGORY) Should this account be disqualified?\n'
-                        'Yes -- Less than 7 total tweets - 1\n'
-                        'Yes -- Less than 7/10 most recent tweets in English - 2\n'
-                        'Yes -- Offensive (Pornographic, Gory, etc.) - 3\n'
-                        'No  -- Continue - 4\n'
+                        '1 - Yes | Less than 7 total tweets\n'
+                        '2 - Yes | Less than 7/10 most recent tweets in English\n'
+                        '3 - Yes | Offensive (Pornographic, Gory, etc.)\n'
+                        '4 - No  | Continue\n'
                         'Answer: ',
     'question_scrn_name': '(TEXT) Enter the screen name (use the bolded name above the @username, exclude emojis): ',
     'question_joined': '(TEXT) Enter date joined (Format = ‘month year’; for example, ‘may 2020’): ',
@@ -63,23 +63,37 @@ questions = {
     'question_instit': '(BINARY) Is this an Official Institutional account? (0 = No, 1 = Yes): ',
     'question_spam': '(BINARY) Is this a spamming account? (0 = No, 1 = Yes): ',
     'question_code': '(CATEGORY) Is this account a bot or hybrid or human being?\n'
-                     'Bot - 1\n'
-                     'Hybrid - 2\n'
-                     'Human Being - 3\n'
-                     'Impossible to decide - 4\n'
+                     '1 - Bot\n'
+                     '2 - Hybrid\n'
+                     '3 - Human Being\n'
+                     '4 - Impossible to decide\n'
                      'Answer: ',
-    'question_notes': '(TEXT) Please enter any notes about this account (If none, put `NA`): ',
+    'question_notes': '(TEXT) NOTES - Please include any miscellaneous notes '
+                      '(e.g. mistakes during annotation, meta-commentary, suggestions, confusion during annotation).\n'
+                      '(If none, put `NA`): ',
     'question_time': '(NUMERIC) Please enter number of minutes it took to complete investigation: ',
-    'question_evidence': '(TEXT) EVIDENCE Provide three lines of evidence defending your categorization: ',
-    'question_num_analysis': '(NUMERIC) ANALYSIS--What is the purpose of this account? Select (up to three) relevant '
-                             'purposes\n'
-                             'Personal - 1, Entertainment - 2, Political- 3, \n'
-                             'Professional - 4, Marketing - 5, Information aggregation - 6\n'
+    'question_evidence': '(TEXT) EVIDENCE - Provide three lines of evidence defending your categorization: ',
+    'question_num_analysis': '(NUMERIC) ANALYSIS - What is the purpose of this account? Select (up to three) relevant '
+                             'purposes:\n'
+                             '1 - Personal\n'
+                             '2 - Entertainment\n'
+                             '3 - Political\n'
+                             '4 - Professional\n'
+                             '5 - Marketing\n'
+                             '6 - Information Aggregation\n'
                              '(for example, `34` means Political and Professional): ',
     'question_theme': '(TEXT) Additional Themes – Does this account have any purposes not covered in the previous '
-                      'question? If so, please explain. (If none, put NA): ',
-    'question_confidence': '(NUMERIC) IN PROGRESS',
-    'question_expl_conf': '(TEXT) IN PROGRESS'
+                      'question?\n'
+                      'If so, please explain. (If none, put NA): ',
+    'question_confidence': '(CATEGORY) Please indicate your level of confidence that your assessment is correct\n'
+                           '1 - <50% | Probably not accurate\n'
+                           '2 -  50% | Could go either way\n'
+                           '3 -  75% | Assessment is probably accurate\n'
+                           '4 -  90% | Assessment is almost certainly accurate\n'
+                           '5 -  99% | I’ll bet my first born this is right\n'
+                           'Answer: '
+                           '',
+    'question_expl_conf': '(TEXT) Please explain the reasoning behind your confidence score: '
 
 }
 
@@ -184,12 +198,12 @@ def questionnaire():
 
         # ?
         print_question_number(question_number)
-        confidence = validate_numeric_response(questions['question_confidence'])
+        confidence = validate_category_response(questions['question_confidence'], 5)
         question_number += 1
 
         # Text
         print_question_number(question_number)
-        expl_confidence = validate_numeric_response(questions['question_expl_conf'])
+        expl_confidence = validate_text_response(questions['question_expl_conf'])
         question_number += 1
 
         # Numeric

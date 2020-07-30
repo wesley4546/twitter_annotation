@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7937f349-1efd-42b8-ade4-368b57f6ae1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/create_output_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/create_output_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/annotator_program.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/annotator_program.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/questionnaire.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/questionnaire.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +33,28 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.questionnaire">
+  <component name="RunManager" selected="Python.annotator_program">
+    <configuration name="annotator_program" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="twitter_annotation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/annotator_program.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="input_validation_functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="twitter_annotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,9 +122,6 @@
       <module name="twitter_annotation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -117,29 +136,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="twitter_annotation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.annotator_program" />
         <item itemvalue="Python.questionnaire" />
         <item itemvalue="Python.input_validation_functions" />
         <item itemvalue="Python.main" />
@@ -165,49 +164,49 @@
       <screen x="1920" y="324" width="1920" height="1040" />
     </state>
     <state x="2717" y="524" key="FileChooserDialogImpl/0.0.1920.1040/1920.324.1920.1040@1920.324.1920.1040" timestamp="1591323127238" />
-    <state width="1259" height="310" key="GridCell.Tab.0.bottom" timestamp="1596052886204">
+    <state width="747" height="310" key="GridCell.Tab.0.bottom" timestamp="1596137374774">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="310" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1596052886204" />
+    <state width="747" height="310" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1596137374774" />
     <state width="1899" height="433" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591248285179" />
     <state width="1259" height="175" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1593634424595" />
-    <state width="1259" height="310" key="GridCell.Tab.0.center" timestamp="1596052886202">
+    <state width="747" height="310" key="GridCell.Tab.0.center" timestamp="1596137374772">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="310" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1596052886202" />
+    <state width="747" height="310" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1596137374772" />
     <state width="1899" height="433" key="GridCell.Tab.0.center/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591248285179" />
     <state width="1259" height="175" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1593634424594" />
-    <state width="1259" height="310" key="GridCell.Tab.0.left" timestamp="1596052886201">
+    <state width="747" height="310" key="GridCell.Tab.0.left" timestamp="1596137374770">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="310" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1596052886201" />
+    <state width="747" height="310" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1596137374770" />
     <state width="1899" height="433" key="GridCell.Tab.0.left/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591248285179" />
     <state width="1259" height="175" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1593634424594" />
-    <state width="1259" height="310" key="GridCell.Tab.0.right" timestamp="1596052886203">
+    <state width="747" height="310" key="GridCell.Tab.0.right" timestamp="1596137374773">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="310" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1596052886203" />
+    <state width="747" height="310" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1596137374773" />
     <state width="1899" height="433" key="GridCell.Tab.0.right/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591248285179" />
     <state width="1259" height="175" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1593634424595" />
-    <state width="1259" height="310" key="GridCell.Tab.1.bottom" timestamp="1596052886207">
+    <state width="747" height="310" key="GridCell.Tab.1.bottom" timestamp="1596137374778">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="310" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1596052886207" />
+    <state width="747" height="310" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1596137374778" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591247054974" />
-    <state width="1259" height="310" key="GridCell.Tab.1.center" timestamp="1596052886205">
+    <state width="747" height="310" key="GridCell.Tab.1.center" timestamp="1596137374776">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="310" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1596052886205" />
+    <state width="747" height="310" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1596137374776" />
     <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591247054974" />
-    <state width="1259" height="310" key="GridCell.Tab.1.left" timestamp="1596052886205">
+    <state width="747" height="310" key="GridCell.Tab.1.left" timestamp="1596137374775">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="310" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1596052886205" />
+    <state width="747" height="310" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1596137374775" />
     <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591247054974" />
-    <state width="1259" height="310" key="GridCell.Tab.1.right" timestamp="1596052886206">
+    <state width="747" height="310" key="GridCell.Tab.1.right" timestamp="1596137374777">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="310" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1596052886206" />
+    <state width="747" height="310" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1596137374777" />
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.324.1920.1040@0.0.1920.1040" timestamp="1591247054974" />
     <state x="363" y="175" width="839" height="549" key="find.popup" timestamp="1595275144572">
       <screen x="0" y="0" width="1280" height="800" />
@@ -235,6 +234,13 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>

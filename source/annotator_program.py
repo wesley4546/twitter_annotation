@@ -28,7 +28,9 @@ def annotator_program(input_annotation_file, output_file_name):
 
     # Starts loop to append to CSV
     for url in URLS:
-        
+        # Tells the User
+        print("\nStarting annotation for user:", screen_names[url])
+
         # Opens the twitter URL
         webbrowser.open(URLS[url])
 
