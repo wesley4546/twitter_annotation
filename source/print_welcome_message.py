@@ -4,6 +4,6 @@ This function is just a welcome message function made to keep track of version d
 
 
 def print_welcome_message():
-    version = "1.2.2"
+    version = "1.2.3"
     print("Twitter Annotation Program (SAIL Data Analytics Lab)")
     print(f"Version: {version}")
