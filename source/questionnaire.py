@@ -188,7 +188,7 @@ def questionnaire():
 
         # Category
         print_question_number(question_number)
-        final_code = validate_category_response(questions['question_code'], 4)
+        final_code = validate_category_response(questions['question_code'], 3)
         question_number += 1
 
         # Text
