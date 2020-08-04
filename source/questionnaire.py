@@ -58,7 +58,7 @@ questions = {
     'question_follower': '(NUMERIC) Enter number of accounts following the account: ',
     'question_tweets_replies': '(NUMERIC) Enter number of tweets and replies displayed: ',
     'question_media': '(NUMERIC) Enter number of media displayed: ',
-    'question_likes': 'NUMERIC) Enter number of posts liked by the account: ',
+    'question_likes': '(NUMERIC) Enter number of posts liked by the account: ',
     'question_topics': '(NUMERIC) Enter number of topics the account follows: ',
     'question_lists': '(NUMERIC) Enter number of lists the account belongs to: ',
     'question_instit': '(BINARY) Is this an Official Institutional account? (0 = No, 1 = Yes): ',
