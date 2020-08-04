@@ -45,7 +45,8 @@ questions = {
                         '1 - Yes | Less than 7 total tweets\n'
                         '2 - Yes | Less than 7/10 most recent tweets in English\n'
                         '3 - Yes | Offensive (Pornographic, Gory, etc.)\n'
-                        '4 - No  | Continue\n'
+                        '4 - Yes | Impossible to code because the account is suspended, protected\n'
+                        '5 - No  | Continue\n'
                         'Answer: ',
     'question_scrn_name': '(TEXT) Enter the screen name (use the bolded name above the @username, exclude emojis): ',
     'question_joined': '(TEXT) Enter date joined (Format = ‘month year’; for example, ‘may 2020’): ',
@@ -66,7 +67,6 @@ questions = {
                      '1 - Bot\n'
                      '2 - Hybrid\n'
                      '3 - Human Being\n'
-                     '4 - Impossible to decide\n'
                      'Answer: ',
     'question_notes': '(TEXT) NOTES - Please include any miscellaneous notes '
                       '(e.g. mistakes during annotation, meta-commentary, suggestions, confusion during annotation).\n'
@@ -106,10 +106,10 @@ def questionnaire():
 
     # Binary
     print_question_number(question_number)
-    qualify = validate_category_response(questions['question_qualify'], 4)
+    qualify = validate_category_response(questions['question_qualify'], 5)
     question_number += 1
 
-    if qualify == 4:
+    if qualify == 5:
 
         # Text
         print_question_number(question_number)
